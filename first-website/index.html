@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Test Page</title>
+    <link rel="icon" type="image/x-icon" href="images/birthday_favicon.png">
+    <style>
+        table, th, td{
+            border: 1px solid blue;  
+            border-collapse: collapse;          
+        }
+        th, td{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .venue_container > h3{
+            width: 95%;
+            background-color: yellowgreen;
+        }
+        .feedback_container {
+            display: flex;
+        }
+
+        .feedback_container > div{
+            width: 30%;
+            padding-left: 10px;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: 15% 15% 15% 15% 15% 15%;
+            padding-left: 10px;
+            background-color: black;
+            color: gray;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <!-- This is a comment section-->
+    <h1>1st Birthday of Saanvika Mishra</h1>
+    <h2>Hosted By: Awadh Bihari Mishra</h2>
+    <div class="venue_container">
+        <h3>Welcome to Pind Balluci, Udyog Vihar, Gurugram</h3>
+    </div>
+
+    <!-- TODO: Create Navigation Bar here-->
+     <div class="navbar">
+            <p>About</p>
+            <p>Events</p>
+            <p>Services</p>
+            <p>Corporates</p>
+            <p>Live Offers</p>
+            <a href="#birthday_celebration_pics" style="text-align: center;color: inherit;">Photo Gallery</a>
+        
+    </div>
+
+    <h3>Get a <a href="#birthday_celebration_pics">glipse</a> of the Celebrations</h3>    
+    <h3 id ="food_menu">Food Menu:</h3>
+    <ul>
+        <li style="color: red;">Pizza</li>
+        <li style="color: brown;">Burger</li>
+        <li style="color: green;background-color: yellow;width: 10%;">Aloo Tikki</li>
+    </ul>
+    <p>Welcoming <span style="color: blue;font-style: italic;">our guests</span> to savour delicious meals!!</p>
+
+    <h3>Guest List</h3>
+    <!-- Inserting the Guest List in a table-->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Residence</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>Shubhangu</td>
+            <td>Gurgaon</td>
+            <td>9123234455</td>
+        </tr>
+        <tr>
+            <td>Sumant</td>
+            <td>Faridabad</td>
+            <td>9353535470</td>
+        </tr>
+        <tr>
+            <td>Alok</td>
+            <td>Kolkata</td>
+            <td>9922577183</td>
+        </tr>
+        <tr>
+            <td>Anurag</td>
+            <td>Singrauli</td>
+            <td>9257295375</td>
+        </tr>        
+    </table>
+    
+    <h3>Feedback from Guests:</h3>
+    <div class="feedback_container">
+        <!-- 1st Division Section-->
+        <div style="background-color: lightpink;">        
+            <h4>Shubhangu</h4>
+            <p>We loved
+                the entire celebrations. The food, place, staff and absolutely everything was
+                <span style="font-style: italic;color: crimson;"> simply beyond imagination.</span>
+            </p>
+        </div>
+        <!-- 2nd Division Section-->
+        <div style="background-color: lightcyan;">        
+            <h4>Alok</h4>
+            <p>A perfect place for family outings. I loved the
+                <span style="font-style: italic;color: blueviolet;"> water breathing coolers :)</span>
+            </p>
+        </div>
+        <!-- 3rd Division Section-->
+        <div style="background-color: lightskyblue;">        
+            <h4>Smriti</h4>
+            <p>The <span style="font-style: italic;color: brown;">food</span> was really really yummmyyyy....
+                
+            </p>
+        </div>
+    </div>
+
+
+    <!-- This is the images section-->
+    <h3 id ="birthday_celebration_pics">Sharing moments of love and togetherness</h3>
+    <img src="images/birthday_cake.JPG" alt="Birthday Cake: Double Layer creamy and delicious cake" style="width: 17.8%;height: auto;"/>    
+    <img src="images/self.JPG" alt="Photograph of Child with Parents" style="width: 17.8%;height: auto;"/>  
+    <img src="images/family.JPG" alt="Photograph of Child with Full Family" style="width: 40%;height: auto;"/>
+    <br>
+    <img src="images/grandparents.JPG" alt="Photograph of Child with Grandparents" style="width: 17.8%;height: auto;"/>
+    <img src="images/full.JPG" alt="Photograph of Child with Larger Family" style="width: 40%;height: auto;"/>
+    <img src="images/baby_taking_first_steps.JPG" alt="Photograph of Baby taking first walk" style="width: 17.8%;height: auto;"/>
+
+    <!-- Inserting the links on the Webpage-->
+    <p>Learn HTML Basics from here: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content" target = "_blank">Mozilla HTML Fundamentals Page</a></p>
+    <p>Connect with us at: <a href="mailto:gouravmishra90@gmail.com">ceo@paymugs.com</a></p>
+</body>
+</html>
