@@ -1,0 +1,20 @@
+.patient_details{
+    color: red;
+    display: block;
+
+}
+
+.navbar{
+    background-color: black;
+    color: grey;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.navbar > p{
+    color: aqua;
+}
+
+#dc_name{
+    color: magenta;
+}
