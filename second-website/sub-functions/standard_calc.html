@@ -15,6 +15,23 @@
             font-size:x-large;
         }
     </style>
+    <script>
+        function turn_Red(){
+            document.getElementById('Cell1').style.backgroundColor = 'red'
+        }
+
+        function turn_Green(){
+            document.getElementById('Cell2').style.backgroundColor = 'green'
+        }
+
+        function turn_Yellow(){
+            document.getElementById('Cell3').style.backgroundColor = 'yellow'
+        }
+
+        function turn_Blue(){
+            document.getElementById('Cell4').style.backgroundColor = 'blue'
+        }
+    </script>
 </head>
 <body>
     <table>
@@ -23,37 +40,43 @@
             <td>8</td>
             <td>9</td>
             <td>/</td>   
-            <td id="Cell1"><button type="button" onclick="document.getElementById('Cell1').style.backgroundColor = 'red'">Turn Red</button></td>         
+            <td id="Cell1"><button type="button" onclick="turn_Red()">Turn Red</button></td>         
         </tr>
         <tr>
             <td>4</td>
             <td>5</td>
             <td>6</td>
             <td>x</td>
-            <td id="Cell2"><button type="button" onclick="document.getElementById('Cell2').style.backgroundColor = 'Green'">Turn Green</button></td>
+            <td id="Cell2"><button type="button" onclick="turn_Green()">Turn Green</button></td>
         </tr>
         <tr>
             <td>1</td>
             <td>2</td>
             <td>3</td>
             <td>-</td>
-            <td id="Cell3"><button type="button" onclick="document.getElementById('Cell3').style.backgroundColor = 'Yellow'">Turn Yellow</button></td>
+            <td id="Cell3"><button type="button" onclick="turn_Yellow()">Turn Yellow</button></td>
         </tr>
         <tr>
             <td>.</td>
             <td>0</td>
             <td>=</td>
             <td>+</td>
-            <td id="Cell4"><button type="button" onclick="document.getElementById('Cell4').style.backgroundColor = 'blue'">Turn Blue</button></td>
+            <td id="Cell4"><button type="button" onclick="turn_Blue()">Turn Blue</button></td>
         </tr>
     </table>
+    <!-- Return the Current Datetime-->
     <button type="button" onclick="document.getElementById('js_first_demo').innerHTML = Date()">Get today's Date</button>
+    <!-- Display the value in below paragraph when above button is clicked-->
     <p id="js_first_demo"></p>
+    
     <p>Result : <span id="result"></span></p>
-    <script>
+    <!-- Example of an inline JavaScript-->
+    <script>          
         document.getElementById('result').innerHTML = "Hello";
         document.getElementById('result').style.color = "red";
     </script>
+
+    <!-- Turn the button itself as Yellow -->
     <button id="itself" type="button" onclick="document.getElementById('itself').style.backgroundColor='Yellow'">Turn Yellow</button>
 </body>
 </html>
